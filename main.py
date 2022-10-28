@@ -28,7 +28,7 @@ driver.maximize_window()
 #шукаю по запиту та скачую результати пошуку
 def get_source_html(url, search_text):
     # driver = webdriver.Chrome(
-    #     executable_path=r'C:\Users\Vadym\Documents\projects\olx_parser\chromedriver\chromedriver.exe',
+    #     executable_path=r' ', #chrome driver path
     #     options=options
     # )
     # driver.maximize_window()
@@ -123,7 +123,7 @@ def paste_urls_into_txt(): #пройтись по кожному хтмл й в�
         if ".html" in i:
             get_item_url(i)
             clear_links(i)
-            get_data(f"C:/Users/Vadym/Documents/projects/olx_parser/{i}_urls_clear.txt")
+            get_data(f"C:/Users/Vadym/Documents/projects/olx_parser/{i}_urls_clear.txt") #
     driver.close()
     driver.quit()
     print("Програма зібрала дані та завершила роботу!")
